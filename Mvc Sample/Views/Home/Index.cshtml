@@ -1,0 +1,66 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/Layouts/_LayoutPage.cshtml";
+}
+
+<h2>Sep IPG</h2>
+
+<div class="panel panel-primary">
+
+    <div class="panel-heading">
+
+        <h4 class="panel-title">Sample Page</h4>
+
+    </div>
+     @using(Html.BeginForm("Index","Home",FormMethod.Post))
+     { 
+    <div class="panel-body">
+
+        <div class="form-horizontal">
+
+            <div class="row form-group">
+                <label for="txtTid" class="col-sm-3 control-label">Terminal Number</label>
+                <div class="col-sm-9">
+                    <input type="text" id="txtTid" name="txtTid" class="form-control" placeholder="Sample : 2765" />
+                   
+                </div>
+            </div>
+
+            <div class="row form-group">
+                <label for="txtAmount" class="col-sm-3 control-label">Amount</label>
+                <div class="col-sm-9">
+                    <input type="text" id="txtAmount" name="txtAmount" class="form-control" placeholder="Sample : 1000" />
+                </div>
+            </div>
+
+            <div class="row form-group">
+                <label for="txtResnum" class="col-sm-3 control-label">Resnum</label>
+                <div class="col-sm-9">
+                    <input type="text" id="txtResnum" name="txtResnum" class="form-control" />
+                </div>
+            </div>
+
+            <div class="row form-group">
+                <label for="txtUrl" class="col-sm-3 control-label">Redirect URL</label>
+                <div class="col-sm-9">
+                    <input type="text" id="txtUrl" name="txtUrl" class="form-control" placeholder="Sample : http://localhost:1234/Home/Return" />
+                </div>
+            </div>
+
+
+            <div class="row form-group">
+                <div class="col-sm-9 col-sm-offset-3">
+                    <button type="submit" id="btnpurchase" class="btn btn-primary" accesskey="P">(P)urchase</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+     }
+    <div class="panel-footer">
+        <a href="#">Mohamad Mojibian</a>
+    </div>
+
+</div>
+     
+

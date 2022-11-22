@@ -1,0 +1,39 @@
+﻿@{
+    ViewBag.Title = "Return";
+    Layout = "~/Views/Shared/Layouts/_LayoutPage.cshtml";
+}
+
+<h2>Result</h2>
+<div class="container">
+
+    <div class="row">
+        <div class="col-sm-12 table-responsive">
+            <table title="نیتجه تست درگاه اینترنتی" class="table table-bordered table-condensed table-striped table-hover">
+                <tr>
+                    <td class="lbl">درگاه پرداخت:</td>
+                    <td >
+                        <p style="color:#F00">@ViewBag.BankName</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="lbl">وضعیت پرداخت:</td>
+                    <td>
+                        <p style="color:#F00">@ViewBag.Message</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="lbl">کد رهگیری:</td>
+                    <td>
+                        @ViewBag.SaleReferenceId
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center;">
+                        <a href="/" class="btn-return">بازگشت</a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+</div>
